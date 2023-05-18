@@ -445,6 +445,7 @@ h6 {
   position: relative;
 }
 
+
 #hero:before {
   content: "";
   /* background: rgba(0, 0, 0, 0.5); */
@@ -510,6 +511,90 @@ h6 {
   }
 
   #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Hero2 Section
+--------------------------------------------------------------*/
+#hero2 {
+  width: 100%;
+  height: calc(100vh - 110px);
+  background: url("../img/hero-bg2.jpg") top center;
+  background-size: cover;
+  position: relative;
+}
+
+
+#hero2:before {
+  content: "";
+  /* background: rgba(0, 0, 0, 0.5); */
+  /* background: rgba(0, 0, 0, 0.5); */
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero2 h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#hero2 h2 {
+  color: #eee;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+#hero2 .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 10px 28px;
+  transition: 0.5s;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#hero2 .btn-get-started:hover {
+  background: #E300F0;
+  border-color: #E300F0;
+}
+
+@media (min-width: 1024px) {
+  #hero2 {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero2 {
+    text-align: center;
+  }
+
+  #hero2 .container {
+    padding-top: 40px;
+  }
+
+  #hero2 h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero2 h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
