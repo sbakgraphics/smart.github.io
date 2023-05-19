@@ -626,6 +626,13 @@ section {
   z-index: 2;
 }
 
+
+.section-titleteam h2 p {
+
+  color: #fcfcfc;
+
+}
+
 .section-title span {
   position: absolute;
   top: 30px;
@@ -640,7 +647,7 @@ section {
 }
 
 .section-title p {
-  margin-bottom: 0;
+  margin-bottom: 20px;
   position: relative;
   z-index: 2;
 }
@@ -682,6 +689,42 @@ section {
 .about .content p:last-child {
   margin-bottom: 0;
 }
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about .content h3 {
+  font-weight: 700;
+  font-size: 36px;
+  font-family: var(--font-secondary);
+  color: var(--color-secondary);
+}
+
+.about .content p {
+  margin: 30px 0;
+  color: #29486a;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding: 0 0 15px 26px;
+  position: relative;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.about .content ul i {
+  position: absolute;
+  font-size: 20px;
+  left: 0;
+  top: -3px;
+  color: var(--color-primary);
+}
+
 
 /*--------------------------------------------------------------
 # Why Us
@@ -836,6 +879,9 @@ section {
 .services .icon-box:hover p {
   color: #fff;
 }
+
+
+
 
 /*--------------------------------------------------------------
 # Cta
@@ -1213,12 +1259,16 @@ section {
 }
 
 .team .member .social a:hover {
-  color: #cc1616;
+  color: #E300F0;
 }
 
 .team .member .social i {
   font-size: 18px;
   margin: 0 2px;
+}
+
+.sectionteam{
+  background-color: #6503BB;
 }
 
 /*--------------------------------------------------------------
@@ -1344,7 +1394,7 @@ section {
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
-.breadcrumbs {
+/* .breadcrumbs {
   padding: 15px 0;
   background: #efefef;
 }
@@ -1372,7 +1422,104 @@ section {
   padding-right: 10px;
   color: #333333;
   content: "/";
+} */
+
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 140px 0 60px 0;
+  min-height: 30vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+.breadcrumbs:before {
+  content: "";
+  background-color: rgba(27, 47, 69, 0.7);
+  position: absolute;
+  inset: 0;
+}
+
+.breadcrumbs h2 {
+  font-size: 56px;
+  font-weight: 500;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.breadcrumbs ol a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+}
+
+.breadcrumbs ol a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #fff;
+  content: "/";
+}
+
+.breadcrumbsactive {
+  color: #fff;
+
+}
+
+
+/*--------------------------------------------------------------
+# overlap image with text
+--------------------------------------------------------------*/
+
+.image-container {
+  position: relative;
+  margin-left: 300px;
+ 
+}
+
+.overlay {
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  background-color: #fff;
+  color: #000;
+  padding: 25px;
+}
+
+@media (min-width: 768px) {
+  .overlay {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  #footer .footer-top .footer-info {
+    margin: -20px 0 30px 0;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Footer
@@ -1428,7 +1575,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #cc1616;
+  background: #E300F0;
   color: #fff;
   text-decoration: none;
 }
