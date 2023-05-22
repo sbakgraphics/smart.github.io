@@ -499,7 +499,7 @@ h6 {
 @media (max-width: 768px) {
   #hero {
     text-align: center;
-    
+
     width: 100%;
     height: calc(100vh - 110px);
     background: url("../img/hero-bg.jpg") top center;
@@ -508,7 +508,7 @@ h6 {
   }
 
   #hero .container {
-    padding-top: 210px;
+    padding-top: 300px;
   }
 
   #hero h1 {
@@ -804,6 +804,16 @@ section {
 @media (max-width: 768px) {
   .clients img {
     width: 40%;
+  }
+}
+
+/*--------------------------------------------------------------
+# map
+--------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+  .map ifame {
+    width: 350px;
   }
 }
 
