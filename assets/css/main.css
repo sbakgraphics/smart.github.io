@@ -18,7 +18,7 @@
 
 .breadcrumbs:before {
   content: "";
-  background-color: rgba(27, 47, 69, 0.7);
+  background-color: rgba(27, 47, 69, 0.1);
   position: absolute;
   inset: 0;
 }
