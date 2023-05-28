@@ -19,6 +19,19 @@ body {
   :root { font-family: 'Inter var', sans-serif; }
 }
 
+p{
+  font-size: 18px;  
+}
+
+.bodyfonts {
+  font-size: 14px; 
+  text-align: left;
+}
+
+.whitecolorfont {
+  color:#fff;
+}
+
 a {
   color: #383aae;
   
@@ -378,7 +391,7 @@ h6 {
   position: absolute;
   top: 55px;
   right: 15px;
-  bottom: 15px;
+  bottom: 300px;
   left: 15px;
   padding: 10px 0;
   background-color: #fff;
@@ -723,7 +736,7 @@ background-color: #191919;
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
@@ -735,13 +748,17 @@ section {
 
 .section-title h2 {
   font-size: 32px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 50;
+  text-transform: capitalize;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #191919;
+  color: #a2a2a2;
+  letter-spacing: .7em;
+  word-spacing: .9em;
+  /* text-transform: lowercase; */
   position: relative;
   z-index: 2;
+  line-height: 1.5;
 }
 
 
@@ -781,12 +798,21 @@ section {
   }
 }
 
+.section-title h3 {
+
+  letter-spacing: .7em;
+  word-spacing: .9em;
+
+}
+
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
+
 }
 
 .about .content ul {
@@ -813,14 +839,14 @@ section {
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 46px;
   font-family: var(--font-secondary);
   color: var(--color-secondary);
 }
 
 .about .content p {
   margin: 30px 0;
-  color: #29486a;
+  color: #0d0d0e;
 }
 
 .about .content ul {
@@ -923,6 +949,145 @@ section {
 # map
 --------------------------------------------------------------*/
 
+/*--------------------------------------------------------------
+# body navigation
+--------------------------------------------------------------*/
+
+.navbody .headerblock{
+  background-color: #aeadad;
+  padding: 20px;
+}
+
+.navbody {
+  display: flex;
+  justify-content: center;
+  letter-spacing: .7em;
+  word-spacing: .7em;
+  font-size: 1em;
+
+}
+
+.navbody ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbody ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.navbody ul li a {
+  text-decoration: none;
+  color: #969393;
+}
+
+.navbody li:hover>a {
+  /* background: #086fb9; */
+  color:#ffffff;
+  /* text-decoration-line: underline; */
+  /* background: #cc1616; */
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbody {
+    flex-wrap: wrap;
+  }
+
+  .navbody ul li {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+/* .services .icon-box {
+  text-align: center;
+  padding: 80px 80px;
+  transition: all ease-in-out 0.3s;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #340261;
+  transition: all 0.3s ease-out 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform-style: preserve-3d;
+}
+
+.services .icon-box .icon i {
+  color: #fff;
+  font-size: 28px;
+}
+
+.services .icon-box .icon::before {
+  position: absolute;
+  content: "";
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: #fce5e5;
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.services .icon-box h4 a {
+  color: #191919;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  background: #FAF5F1;
+  border-color: #340261;
+  padding: 70px 20px 90px 20px;
+}
+
+.services .icon-box:hover .icon {
+  background: #fff;
+}
+
+.services .icon-box:hover .icon i {
+  color: #340261;
+}
+
+.services .icon-box:hover .icon::before {
+  background: #340261;
+}
+
+.services .icon-box:hover h4 a,
+.services .icon-box:hover p {
+  color: #340261;
+} */
+
 
 
 /*--------------------------------------------------------------
@@ -977,7 +1142,7 @@ section {
 
 .services .icon-box p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 0;
 }
 
@@ -1044,6 +1209,35 @@ section {
   background: #340261;
   border: 2px solid #340261;
 }
+
+
+/*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #f1f2f2;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #D75EFF;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -1758,25 +1952,34 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
+
+
+
 #footer {
   /* background: #340261; */
   background: #fff;
-
+  /* border-top:1px solid #262626;  */
+  /* border-top: 1px solid #262626; */
 
 
   padding: 0 0 30px 0;
   color: #000;
   font-size: 14px;
+  
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
+  /* border-top:1px solid #262626;  */
+  
+
 }
 
 #footer .footer-top .footer-info {
   margin-bottom: 15px;
   /* background: #191919; */
-  color: #fff;
+  color: #000;
   /* border-top: 4px solid #cc1616; */
   text-align: center;
   padding: 30px 20px;
@@ -1800,7 +2003,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #6503BB;
+  background: #444444;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1821,9 +2024,10 @@ section {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
+  color: #444444;
   position: relative;
   padding-bottom: 12px;
+  text-align: left;
 }
 
 #footer .footer-top .footer-links {
@@ -1901,6 +2105,12 @@ section {
   border-top: 1px solid #262626;
   text-align: center;
   padding-top: 30px;
+}
+
+#footer .footerborder {
+  border-top: 1px solid #262626;
+  /* text-align: center; */
+  padding-top: 50px;
 }
 
 #footer .credits {
